@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - ayudantia
+      - main
 
 jobs:
   build:
@@ -13,4 +13,4 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        repository: https://github.com/DevOps-Fundamentos-v7/microservicio-java
+        repository: DevOps-Fundamentos-v7/microservicio-java
