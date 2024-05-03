@@ -1,0 +1,15 @@
+ame: CI
+on:
+  push:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@v3
+    with:
+    repository: https://github.com/DevOps-Fundamentos-v7/microservicio-java
+
+    - name: run a multi-line script
+    run: |
+      echo "Hola Mundo"
