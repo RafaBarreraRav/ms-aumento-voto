@@ -8,15 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     steps:
-    - name: Use Node.js 20
-      uses: actions/setup-node@v3
-      with:
-        node-version: '20'
-
-    - name: Checkout repository
-      uses: actions/checkout@v3
-      with:
-        repository: DevOps-Fundamentos-v7/microservicio-java
-
-    # Puedes agregar aquí pasos adicionales según sea necesario para tu flujo de trabajo
+      - name: Checkout private tools
+        uses: actions/checkout@v4
+        with:
+          repository: DevOps-Fundamentos-v7/microservicio-java
